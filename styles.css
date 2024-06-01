@@ -1,26 +1,39 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Ubuntu, sans-serif;
     background-color: #00111C;
     color: #ffffff;
     height: 100%;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #00111C;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.sidebar h1 {
-    margin: 0;
-    font-size: 24px;
-}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #00253E;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: #00406C;
+  }
 
 .main-content {
     margin-left: 220px;
@@ -34,4 +47,8 @@ body, html {
 
 .main-content p {
     font-size: 24px;
+}
+
+body {
+    font-family: Ubuntu, "times new roman", times, roman, serif;
 }
