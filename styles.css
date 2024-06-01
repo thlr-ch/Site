@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Ubuntu, sans-serif;
+    font-family: Ubuntu, 'Times New Roman', Times, serif;
     background-color: #00111C;
     color: #ffffff;
     height: 100%;
@@ -9,9 +9,21 @@ body, html {
 
 /* Add a black background color to the top navigation */
 .topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #00253E;
-    overflow: hidden;
-  }
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1000;
+}
+
+.topnav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -49,6 +61,8 @@ body, html {
     font-size: 24px;
 }
 
-body {
-    font-family: Ubuntu, "times new roman", times, roman, serif;
-}
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
