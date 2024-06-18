@@ -50,6 +50,10 @@ body, html {
 .main-content {
     margin-left: 220px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .main-content h1 {
