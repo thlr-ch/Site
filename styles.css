@@ -59,10 +59,13 @@ body, html {
 .main-content h1 {
     font-size: 48px;
     margin-top: 50px;
+    text-align: center;
 }
 
 .main-content p {
     font-size: 24px;
+    text-align: center;
+    
 }
 
 .ubuntu-regular {
