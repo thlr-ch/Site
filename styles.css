@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', 'Times New Roman', Times, serif;
-  background-color: #00111C;
+  background-color: #00111C; /* Original background color */
   color: #ffffff;
   height: 100%;
 }
@@ -10,7 +10,7 @@ body, html {
 /* Navbar styles */
 .navbar {
   width: 100%;
-  background-color: #00253E;
+  background-color: #00253E; /* Original navbar background color */
   padding: 20px;
   position: fixed;
   top: 0;
@@ -32,7 +32,7 @@ body, html {
 }
 
 .navbar-brand {
-  color: white;
+  color: white; /* Original brand text color */
   text-decoration: none;
   font-size: 1.5em;
 }
@@ -40,8 +40,8 @@ body, html {
 .rounded-button {
   padding: 10px 20px;
   font-size: 1em;
-  color: white;
-  background-color: #f57c00;
+  color: white; /* Button text color */
+  background-color: #04AA6D; /* Original button background color */
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -49,7 +49,7 @@ body, html {
 }
 
 .rounded-button:hover {
-  background-color: #e64a19;
+  background-color: #038857; /* Darker shade of button color on hover */
   transform: scale(1.1);
 }
 
@@ -72,4 +72,42 @@ h1 {
 p {
   font-size: 1.5em;
   text-align: center;
+}
+
+.newsletter-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #00253E; /* Match navbar background color */
+  color: #ffffff;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 250px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #04AA6D; /* Match button background color */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #038857; /* Darker shade of button color on hover */
+  transform: scale(1.1);
 }
