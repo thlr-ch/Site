@@ -111,3 +111,12 @@ p {
   background-color: #038857; /* Darker shade of button color on hover */
   transform: scale(1.1);
 }
+
+.thanks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 60px;
+}
