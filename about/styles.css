@@ -56,11 +56,22 @@ body, html {
 
 /* About page styles */
 .about-container {
+    display: flex;
+    flex-direction: column; 
     max-width: 800px;
-    margin: 100px auto;
+    margin: auto;
+    height: 200px;
     padding: 20px;
-    text-align: justify;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
     box-sizing: border-box;
+    margin-top: 200px;
+    
+}
+
+.about-container p {
+    margin: 0; /* Ensure no extra margin is added to the text */
 }
 
 .about-container h1 {
@@ -81,7 +92,7 @@ body, html {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
