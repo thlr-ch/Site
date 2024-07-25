@@ -1,17 +1,17 @@
-/* Body and HTML styles */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', 'Times New Roman', Times, serif;
-    background-color: #00111C; /* Original background color */
+    background-color: #00111C;
     color: #ffffff;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Navbar styles */
 .navbar {
     width: 100%;
-    background-color: #00253E; /* Original navbar background color */
+    background-color: #00253E;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -33,7 +33,7 @@ body, html {
 }
 
 .navbar-brand {
-    color: white; /* Original brand text color */
+    color: white;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -41,8 +41,8 @@ body, html {
 .rounded-button {
     padding: 10px 20px;
     font-size: 1em;
-    color: white; /* Button text color */
-    background-color: #04AA6D; /* Original button background color */
+    color: white;
+    background-color: #04AA6D;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -50,16 +50,30 @@ body, html {
 }
 
 .rounded-button:hover {
-    background-color: #038857; /* Darker shade of button color on hover */
+    background-color: #038857;
     transform: scale(1.1);
 }
 
-/* About page styles */
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
 .about-container {
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
-    margin: 100px auto;
+    width: 100%;
+    margin: auto;
     padding: 20px;
-    text-align: justify;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
 }
 
@@ -75,13 +89,11 @@ body, html {
     margin-bottom: 20px;
 }
 
-/* Footer styles */
 .footer {
-    background-color: #00253E; /* Original navbar background color */
+    background-color: #00253E;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    box-sizing: border-box;
 }
