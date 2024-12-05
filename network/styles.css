@@ -1,0 +1,56 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+  font-family: 'Ubuntu', 'Times New Roman', Times, serif;
+
+}   
+
+  :root {
+    --background-color: #F7F8F3; /* Default background color (Solana) */
+    --primary-color: #78BCC4;   /* Default primary color (Solana) */
+    --accent-color: #002C3E;    /* Default accent color (Solana) */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transitions */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth color transitions */
+}
+
+#content {
+    border: 2px solid var(--accent-color);
+    padding: 20px;
+    margin: 20px;
+    transition: border-color 0.5s ease; /* Smooth transition for borders */
+}
+
+body.theme-solana {
+    --background-color: #F7F8F3;
+    --primary-color: #78BCC4;
+    --accent-color: #002C3E;
+}
+
+body.theme-basechain {
+    --background-color: #2D2A32;
+    --primary-color: #EF1F4D;
+    --accent-color: #9B1C3D;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #ccc;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #bbb;
+}

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light mode background */
+    color: #333; /* Light mode text color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark mode background */
+    color: #f4f4f4; /* Dark mode text color */
+}
+
+.toc-container, .sticky-toc {
+    background-color: #ffffff; /* Light mode TOC background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode .toc-container, body.dark-mode .sticky-toc {
+    background-color: #2c2c2c; /* Dark mode TOC background */
+    border-color: #444; /* Dark mode border color */
+}
+
+.toc-container h2, .sticky-toc h2 {
+    margin: 0 0 10px;
+}
+
+.toc-container ul, .sticky-toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc-container li, .sticky-toc li {
+    margin: 5px 0;
+}
+
+.toc-container a, .sticky-toc a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    display: flex;
+    align-items: center;
+}
+
+.toc-container a:hover, .sticky-toc a:hover {
+    color: #0056b3; /* Darker link color on hover */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd; /* Inactive dot color */
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.active .dot {
+    background-color: #007bff; /* Active dot color */
+}
+
+/* Sticky TOC styles */
+.sticky {
+.toc-container {
+    position: static; /* Static position for the top TOC */
+}
+
+.sticky-toc {
+    position: fixed; /* Fixed position for the sticky TOC */
+    top: 20px; /* Distance from the top of the viewport */
+    right: 20px; /* Distance from the right side of the viewport */
+    display: none; /* Initially hidden */
+}
+
+/* Show sticky TOC when scrolling */
+body.scrolled .sticky-toc {
+    display: block; /* Show sticky TOC when scrolled */
+}}

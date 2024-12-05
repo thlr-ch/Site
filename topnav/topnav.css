@@ -1,0 +1,37 @@
+.topnav {
+    background-color: #00375c; /* Topnav background color */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 24px; /* Hamburger icon size */
+}
+
+.nav-links {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Position below the navbar */
+    right: 10px;
+    background-color: #00375c; /* Same as topnav */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a, .nav-links button {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-links a:hover, .nav-links button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+}
