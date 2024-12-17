@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Validators and Staking</title>
+    <script>
+
+window.addEventListener('DOMContentLoaded', () => {
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+        } else {
+            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+        }
+    });
+});
+
+// Track all sections that have an `id` applied
+document.querySelectorAll('section[id]').forEach((section) => {
+    observer.observe(section);
+});
+
+        });
+
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;500;700&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+            position: sticky;
+            align-self: start;
+            top: 2rem;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            font-family: 'Cardo', serif;
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .content {
+            width: 75%;
+            padding: 40px;
+            text-align: left;
+        }
+        .content h1 {
+            font-family: 'Cardo', serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            font-family: 'Cardo', serif;
+            font-size: 2em;
+            margin-top: 40px;
+        }
+        .content p, .content ol, .content ul {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        ol {
+            padding-left: 40px;
+        }
+        ol li {
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 40px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .box {
+            margin: 30px auto;
+            padding: 30px;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Understanding Validators and Staking</h1>
+            <div class="box">
+                <h2 id="what-are-validators">What Are Validators?</h2>
+                <p>
+                    Imagine a blockchain as a <strong>giant online spreadsheet</strong> where people record transactions. To keep it accurate and secure, it needs trustworthy people, called <strong>validators</strong>, who act like the <strong>referees</strong> ensuring everyone plays fair.
+                    Validators verify transactions and add them to the blockchain. In return, they earn rewards like cryptocurrency.
+                </p>
+            </div>
+            <div class="box">
+                <h2 id="how-to-stake">How to Pick and Stake</h2>
+                <p>
+                    Validators are like trustworthy banks. Choose one with a <strong>good reputation</strong>, <strong>fair fees</strong>, and <strong>secure practices</strong>. To stake:
+                </p>
+                <ol>
+                    <li>Buy the specific cryptocurrency (e.g., SOL for Solana).</li>
+                    <li>Open your wallet app and find the "Staking" section.</li>
+                    <li>Select a validator and decide how much crypto to stake.</li>
+                    <li>Confirm and lock your stake!</li>
+                </ol>
+            </div>
+            <div class="box">
+                <h2 id="why-stake">Why Stake?</h2>
+                <p>
+                    Staking has benefits and risks:
+                </p>
+                <ul>
+                    <li><strong>Benefits</strong>: Earn rewards, support the network, and enjoy long-term gains.</li>
+                    <li><strong>Risks</strong>: Locked funds, validator issues, and market fluctuations.</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2 id="example">Simple Example</h2>
+                <p>
+                    Imagine your town uses tokens for trades. To prevent cheating, referees track trades. You support a referee by giving them tokens to hold (staking), and they share their paycheck (rewards) with you. However, you can’t use your tokens while they’re staked.
+                </p>
+            </div>
+            <div class="box">
+                <h2 id="summary">The Big Picture</h2>
+                <p>
+                    Staking is like joining a team to keep the crypto world fair and running smoothly. If done right, it’s a win-win: you earn rewards while helping the blockchain thrive!
+                </p>
+            </div>
+        </div>
+        <nav class="sidebar">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#what-are-validators">What Are Validators?</a></li>
+                <li><a href="#how-to-stake">How to Pick and Stake</a></li>
+                <li><a href="#why-stake">Why Stake?</a></li>
+                <li><a href="#example">Simple Example</a></li>
+                <li><a href="#summary">The Big Picture</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

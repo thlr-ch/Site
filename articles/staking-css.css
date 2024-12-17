@@ -1,17 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light mode background */
-    color: #333; /* Light mode text color */
+    background-color: #f4f4f4;
+    color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode {
-    background-color: #1a1a1a; /* Dark mode background */
-    color: #f4f4f4; /* Dark mode text color */
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .toc-container, .sticky-toc {
-    background-color: #ffffff; /* Light mode TOC background */
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 10px;
@@ -21,8 +52,8 @@ body.dark-mode {
 }
 
 body.dark-mode .toc-container, body.dark-mode .sticky-toc {
-    background-color: #2c2c2c; /* Dark mode TOC background */
-    border-color: #444; /* Dark mode border color */
+    background-color: #2c2c2c;
+    border-color: #444;
 }
 
 .toc-container h2, .sticky-toc h2 {
@@ -40,42 +71,43 @@ body.dark-mode .toc-container, body.dark-mode .sticky-toc {
 
 .toc-container a, .sticky-toc a {
     text-decoration: none;
-    color: #007bff; /* Link color */
+    color: #007bff;
     display: flex;
     align-items: center;
 }
 
 .toc-container a:hover, .sticky-toc a:hover {
-    color: #0056b3; /* Darker link color on hover */
+    color: #0056b3;
 }
 
 .dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ddd; /* Inactive dot color */
+    background-color: #ddd;
     margin-right: 10px;
     transition: background-color 0.3s;
 }
 
 .active .dot {
-    background-color: #007bff; /* Active dot color */
+    background-color: #007bff;
 }
 
-/* Sticky TOC styles */
-.sticky {
-.toc-container {
-    position: static; /* Static position for the top TOC */
+.sticky .toc-container {
+    position: static;
 }
 
 .sticky-toc {
-    position: fixed; /* Fixed position for the sticky TOC */
-    top: 20px; /* Distance from the top of the viewport */
-    right: 20px; /* Distance from the right side of the viewport */
-    display: none; /* Initially hidden */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
 }
 
-/* Show sticky TOC when scrolling */
 body.scrolled .sticky-toc {
     display: block; /* Show sticky TOC when scrolled */
-}}
+}
+
+p {
+    margin: 5px 0;
+}
