@@ -1,0 +1,4 @@
+network/
+*.env
+*.local
+*.js
